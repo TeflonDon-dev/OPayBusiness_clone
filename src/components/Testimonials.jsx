@@ -3,7 +3,7 @@ import quaote from "../assets/quote-symbol.png";
 
 const Testimonials = () => {
   return (
-    <section className=" my-20 p-5 lg:p-28 flex items-center flex-col lg:flex-row gap-5">
+    <section className=" my-20 p-5 lg:p-28 flex items-center flex-col lg:flex-row gap-5 ">
       <div className=" bg-[#F8F8FA] relative p-5 ">
         <img
           src={quaote}
@@ -16,7 +16,7 @@ const Testimonials = () => {
           their transfer services are seamless and swift.
         </p>
       </div>
-      <div className=" bg-[#F8F8FA] relative p-5">
+      <div className=" bg-[#F8F8FA] relative p-5 w-full">
         <img
           src={quaote}
           alt="quaote-symbol"

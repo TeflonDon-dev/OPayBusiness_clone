@@ -21,7 +21,7 @@ const Footer = () => {
           <img src={OpayLogo} alt="OpayLogo" className=" lg:hidden w-40 " />
         </Link>
       </div>
-      <div className="">
+      <div className="self-start">
         <div className=" lg:flex items-center justify-between gap-4  border-b pb-3 text-xl mb-5 font-bold  hidden">
           <Link to={"/payments"} className=" hover:text-[#1DCF9F] duration-500">
             Payments
@@ -33,8 +33,8 @@ const Footer = () => {
             About OPay
           </Link>
         </div>
-        <div className=" flex flex-col lg:justify-between lg:items-center lg:flex-row gap-5 lg:gap-20">
-          <div className=" flex flex-col gap-2 border-b lg:border-none pb-5 lg:p-0">
+        <div className=" flex flex-col  lg:justify-between lg:items-center lg:flex-row gap-5 lg:gap-20">
+          <div className=" flex flex-col  gap-2 border-b lg:border-none pb-5 lg:p-0">
             <div className=" flex items-center gap-2">
               <img src={location} alt="location" className=" w-4" />
               <span className=" underline">Lagos</span>
