@@ -26,7 +26,15 @@ const Nav = () => {
     <nav className="w-full fixed top-0 left-0 z-50 bg-white">
       <div className=" lg:flex lg:justify-between p-3 lg:items-center lg:w-10/12 lg:mx-auto">
         <div className="cursor-pointer">
-          <Link to={"/"}>
+          <Link
+            to={"/"}
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+          >
             <img src={OpayLogo} alt="opay-logo" className=" w-56" />
           </Link>
         </div>
@@ -61,7 +69,7 @@ const Nav = () => {
             >
               <Link
                 to={link.link}
-                className={` hover:text-[#1DCF9F] duration-500 ${
+                className={` hover:text-[#1DCF9F] duration-500 w-full ${
                   pathMatchRoute(link.link) &&
                   "lg:underline lg:underline-offset-8 lg:decoration-[#1DCF9F] font-bold"
                 }`}

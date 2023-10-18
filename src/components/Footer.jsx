@@ -8,28 +8,71 @@ import location from "../assets/location.png";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer className=" p-8 bg-[#210F60] flex flex-col lg:flex lg:flex-row items-center justify-around text-white gap-5 lg:gap-10 mt-8 lg:mt-20">
+    <footer className=" p-8 bg-[#210F60] flex flex-col lg:flex lg:flex-row items-center justify-around text-white gap-5 lg:gap-10 ">
       <div className=" self-start lg:self-center">
-        <Link to={"/"}>
+        <Link
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }}
+          to={"/"}
+        >
           <img
             src={opayLogo2}
             alt="opayLogo2"
             className=" hidden lg:inline-flex w-28"
           />
         </Link>
-        <Link to={"/"}>
+        <Link
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }}
+          to={"/"}
+        >
           <img src={OpayLogo} alt="OpayLogo" className=" lg:hidden w-40 " />
         </Link>
       </div>
       <div className="self-start">
         <div className=" lg:flex items-center justify-between gap-4  border-b pb-3 text-xl mb-5 font-bold  hidden">
-          <Link to={"/payments"} className=" hover:text-[#1DCF9F] duration-500">
+          <Link
+            to={"/payments"}
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+            className=" hover:text-[#1DCF9F] duration-500"
+          >
             Payments
           </Link>
-          <Link to={"/solutions"} className="hover:text-[#1DCF9F] duration-500">
+          <Link
+            to={"/solutions"}
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+            className="hover:text-[#1DCF9F] duration-500"
+          >
             Solutions
           </Link>
-          <Link to={"/about"} className="hover:text-[#1DCF9F] duration-500">
+          <Link
+            to={"/about"}
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+            className="hover:text-[#1DCF9F] duration-500"
+          >
             About OPay
           </Link>
         </div>

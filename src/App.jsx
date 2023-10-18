@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
       <Nav />
-      <main className=" pb-10 pt-16 min-h-[calc(100vh)]">
+      <main className=" pt-16 min-h-[calc(100vh)]">
         <Outlet />
       </main>
       <Footer />

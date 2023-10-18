@@ -2,7 +2,7 @@ import React from "react";
 import phoneImg from "../assets/phone-img.png";
 const Contact = () => {
   return (
-    <section>
+    <section className=" mb-10 lg:mb-32">
       <div className=" text-center text-xl text-[#210F60] font-bold mb-7 lg:text-4xl lg:font-extrabold lg:mb-12">
         Join Us & Grow Your Business Faster
       </div>
