@@ -3,7 +3,7 @@ import phoneImg from "../assets/phone-img.png";
 
 const Solutions = () => {
   return (
-    <section className="py-5 lg:py-20">
+    <section className="pb-5 lg:pb-20">
       <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/banner-m-c1cd1ddb.png')] h-[43vh] bg-center bg-cover lg:h-[80vh] lg:pt-16">
         <div className=" p-8">
           <p className=" text-3xl font-bold text-white leading-10 lg:text-center lg:text-5xl lg:font-extrabold lg:mb-3">
