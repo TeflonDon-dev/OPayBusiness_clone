@@ -8,7 +8,7 @@ import location from "../assets/location.png";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer className=" p-8 bg-[#210F60] flex flex-col lg:flex lg:flex-row items-center justify-around text-white gap-5 lg:gap-10 ">
+    <footer className=" p-8 pb-16 bg-[#210F60] flex flex-col lg:flex lg:flex-row items-center justify-around text-white gap-5 lg:gap-10 ">
       <div className=" self-start lg:self-center">
         <Link
           onClick={() => {
@@ -77,7 +77,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className=" flex flex-col  lg:justify-between lg:items-center lg:flex-row gap-5 lg:gap-20">
-          <div className=" flex flex-col  gap-2 border-b lg:border-none pb-5 lg:p-0">
+          <div className=" flex flex-col  gap-2 border-b border-b-slate-100 lg:border-none pb-5 lg:p-0">
             <div className=" flex items-center gap-2">
               <img src={location} alt="location" className=" w-4" />
               <span className=" underline">Lagos</span>

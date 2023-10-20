@@ -102,7 +102,7 @@ const Payments = () => {
           online payments for everyone
         </h2>
         <div className="flex items-center gap-5 px-10 lg:px-24 overflow-x-scroll scrollbar-none ">
-          <div class=" min-w-[270px]  lg:basis-1/2  bg-[url('https://opaybusiness.opayweb.com/static/png/1-946e5fb4.png')] lg:h-screen h-[55vh]  bg-center bg-cover">
+          <div className=" min-w-[270px]  lg:basis-1/2  bg-[url('https://opaybusiness.opayweb.com/static/png/1-946e5fb4.png')] lg:h-screen h-[55vh]  bg-center bg-cover">
             <div className="  h-full relative">
               <div className=" absolute bottom-10 text-white pl-5">
                 <p className=" font-bold text-xl lg:text-4xl lg:font-extrabold">
@@ -118,7 +118,7 @@ const Payments = () => {
               </div>
             </div>
           </div>
-          <div class="min-w-[270px] lg:basis-1/2 bg-[url('https://opaybusiness.opayweb.com/static/png/2-d704ddc2.png')] lg:h-screen h-[55vh]   bg-center bg-cover">
+          <div className="min-w-[270px] lg:basis-1/2 bg-[url('https://opaybusiness.opayweb.com/static/png/2-d704ddc2.png')] lg:h-screen h-[55vh]   bg-center bg-cover">
             <div className=" h-full relative">
               <div className=" absolute bottom-10 text-white pl-5">
                 <p className=" font-bold text-xl lg:text-4xl lg:font-extrabold">
@@ -134,7 +134,7 @@ const Payments = () => {
               </div>
             </div>
           </div>
-          <div class="min-w-[270px]  lg:basis-1/2 bg-[url('https://opaybusiness.opayweb.com/static/png/3-e40fec62.png')] lg:h-screen h-[55vh] bg-center bg-cover">
+          <div className="min-w-[270px]  lg:basis-1/2 bg-[url('https://opaybusiness.opayweb.com/static/png/3-e40fec62.png')] lg:h-screen h-[55vh] bg-center bg-cover">
             <div className="h-full relative">
               <div className=" absolute bottom-10 text-white pl-5">
                 <p className=" font-bold text-xl lg:text-4xl lg:font-extrabold">
