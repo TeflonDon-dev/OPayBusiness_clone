@@ -1,6 +1,9 @@
 import React from "react";
 import phoneImg from "../assets/phone-img.png";
+import { openModal } from "../features/modalSlice";
+import { useDispatch } from "react-redux";
 const Contact = () => {
+  const dispatch = useDispatch();
   return (
     <section className=" mb-10 lg:mb-32">
       <div className=" text-center text-xl text-[#210F60] font-bold mb-7 lg:text-4xl lg:font-extrabold lg:mb-12">

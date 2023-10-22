@@ -2,8 +2,12 @@ import React from "react";
 import BannerImage from "../assets/opay-banner.png";
 import CBNlogo from "../assets/CBNLogo.png";
 import NDIClogo from "../assets/NDIClogo.png";
+import { openModal } from "../features/modalSlice";
+import { useDispatch } from "react-redux";
 
 const Hero = () => {
+  const dispatch = useDispatch();
+
   return (
     <section className=" lg:bg-[#eff1ee] flex flex-col gap-5 lg:flex-row-reverse lg:gap-0 items-center lg:h-screen lg:items-center">
       <div className="bg-[#E6F7EE] lg:bg-inherit lg:w-full lg:h-full lg:relative">
@@ -31,7 +35,10 @@ const Hero = () => {
           </p>
         </div>
         <div>
-          <button className=" px-10 py-2 lg:px-12 lg:py-3 lg:font-extrabold lg:text-2xl lg:rounded-full rounded-3xl bg-[#1DCF9F] text-white text-lg font-bold">
+          <button
+            className=" px-10 py-2 lg:px-12 lg:py-3 lg:font-extrabold lg:text-2xl lg:rounded-full rounded-3xl bg-[#1DCF9F] text-white text-lg font-bold"
+            onClick={() => dispatch(openModal())}
+          >
             Contact Us
           </button>
         </div>
