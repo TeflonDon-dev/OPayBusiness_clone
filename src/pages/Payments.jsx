@@ -2,8 +2,11 @@ import React from "react";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import opaySystem from "../assets/opaysystem.png";
 import phoneImg from "../assets/phone-img.png";
+import { openModal } from "../features/modalSlice";
+import { useDispatch } from "react-redux";
 
 const Payments = () => {
+  const dispatch = useDispatch();
   return (
     <section>
       <div className=" bg-[#FAFAFA] pb-12 lg:pb-32">
@@ -230,7 +233,10 @@ const Payments = () => {
         </p>
         <div className=" flex items-center gap-2 justify-center bg-[#1DCF9F] w-4/5 lg:w-[45%] mx-auto rounded-full text-white py-2 mt-5 lg:mt-20">
           <img src={phoneImg} alt="phone-Img" className=" w-10 lg:w-16" />
-          <button className=" text-2xl lg:text-3xl font-bold lg:font-extrabold">
+          <button
+            className=" text-2xl lg:text-3xl font-bold lg:font-extrabold"
+            onClick={() => dispatch(openModal())}
+          >
             Contact OPay
           </button>
         </div>
