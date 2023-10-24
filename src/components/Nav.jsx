@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -6,6 +6,23 @@ import OpayLogo from "../assets/opay-log.png";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 const Nav = () => {
+  const [scroll, setScroll] = useState(false);
+
+  const handleScroll = () => {
+    if (scrollY > 50) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scroll]);
+
   let Links = [
     { name: "Home", link: "/" },
     { name: "Payments", link: "/payments" },
@@ -23,7 +40,13 @@ const Nav = () => {
 
   const [open, setOpen] = useState(false);
   return (
-    <nav className="w-full fixed top-0 left-0 z-50 bg-white">
+    <nav
+      className={
+        scroll
+          ? " z-50 w-full fixed bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10"
+          : "w-full fixed top-0 left-0 z-50 bg-white"
+      }
+    >
       <div className=" lg:flex lg:justify-between p-3 lg:items-center lg:w-10/12 lg:mx-auto">
         <div className="cursor-pointer">
           <Link
@@ -35,11 +58,11 @@ const Nav = () => {
               });
             }}
           >
-            <img src={OpayLogo} alt="opay-logo" className=" w-56" />
+            <img src={OpayLogo} alt="opay-logo" className=" w-44 md:w-56" />
           </Link>
         </div>
 
-        <div className="  text-3xl absolute right-8 top-6 cursor-pointer lg:hidden">
+        <div className="  text-3xl absolute right-8 top-5 cursor-pointer lg:hidden">
           <div onClick={() => setOpen(!open)}>
             {open ? (
               <AiOutlineClose className=" border-2 rounded-full border-black p-[2px]" />
