@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className=" bg-[#F8F8F8]">
       <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/banner-m-e38af5af.png')] bg-[#1DCF9F] bg-cover lg:bg-contain lg:bg-no-repeat bg-center h-[28vh] lg:h-screen">
-        <h2 className=" text-3xl font-bold text-center p-10 text-[#210F60] lg:text-6xl lg:font-extrabold lg:pt-28">
+        <h2 className=" text-3xl font-bold text-center p-10 text-[#210F60] md:text-6xl lg:font-extrabold lg:pt-28">
           About Us
         </h2>
       </div>
@@ -23,7 +23,7 @@ const About = () => {
           />
         </div>
         <div className=" text-sm lg:text-justify lg:basis-3/5 text-[#210F60] lg:self-center">
-          <p className=" leading-6 lg:text-xl lg:font-medium ">
+          <p className=" leading-6 md:text-xl lg:font-medium ">
             OPay Digital Services Limited is a leading payment and financial
             service platform. Our mission is to drive financial inclusion by
             providing efficient and convenient payment services, as we fully
@@ -32,7 +32,7 @@ const About = () => {
             solutions to over 30 million consumers and 1 million businesses of
             all sizes.
           </p>
-          <p className=" my-8 leading-6 lg:text-xl lg:font-medium ">
+          <p className=" my-8 leading-6 md:text-xl lg:font-medium ">
             We are a global company with footprints in many emerging markets
             across Asia, Africa and latin America. Our journey in Nigeria
             started in 2018 and we are strictly licensed and regulated by the
@@ -55,10 +55,10 @@ const About = () => {
             />
           </div>
           <div className=" px-6 lg:basis-1/2 lg:px-8 ">
-            <h2 className=" text-xl font-bold text-[#210F60] mb-2 lg:mb-8 lg:text-5xl lg:font-extrabold">
+            <h2 className=" text-xl font-bold text-[#210F60] mb-2 md:mb-8 md:text-5xl lg:font-extrabold">
               Entrepreneurship
             </h2>
-            <p className=" text-[#575757] lg:text-xl">
+            <p className=" text-[#575757] md:text-xl">
               Create opportunities and solve pain points with collaboration and
               passion for the industry
             </p>
@@ -72,10 +72,10 @@ const About = () => {
             />
           </div>
           <div className=" px-6 lg:basis-1/2 lg:px-8">
-            <h2 className=" text-xl font-bold text-[#210F60] mb-2 lg:mb-8 lg:text-5xl lg:font-extrabold">
+            <h2 className=" text-xl font-bold text-[#210F60] mb-2 md:mb-8 md:text-5xl lg:font-extrabold">
               Diversity
             </h2>
-            <p className=" text-[#575757] lg:text-xl lg:w-2/3">
+            <p className=" text-[#575757] md:text-xl lg:w-2/3">
               Embrace people from diversified backgrounds and acknowledge the
               interdependence as humans
             </p>
@@ -89,10 +89,10 @@ const About = () => {
             />
           </div>
           <div className=" px-6 lg:basis-1/2  lg:pl-8 ">
-            <h2 className=" text-xl font-bold text-[#210F60] mb-2 lg:mb-8 lg:text-5xl lg:font-extrabold">
+            <h2 className=" text-xl font-bold text-[#210F60] mb-2 md:mb-8 md:text-5xl lg:font-extrabold">
               Innovation
             </h2>
-            <p className=" text-[#575757] lg:text-xl lg:w-2/3">
+            <p className=" text-[#575757] md:text-xl lg:w-2/3">
               Ride on advanced technologies to nourish an innovation-drioven
               working environment
             </p>
@@ -106,10 +106,10 @@ const About = () => {
             />
           </div>
           <div className=" px-6 lg:basis-1/2  lg:pl-8">
-            <h2 className=" text-xl font-bold text-[#210F60] mb-2  lg:mb-8 lg:text-5xl lg:font-extrabold">
+            <h2 className=" text-xl font-bold text-[#210F60] mb-2  md:mb-8 md:text-5xl lg:font-extrabold">
               Community
             </h2>
-            <p className=" text-[#575757] lg:text-xl lg:w-4/5">
+            <p className=" text-[#575757] md:text-xl lg:w-4/5">
               Enhance our synergy by creating a vibrant community with great
               people and great cultures
             </p>

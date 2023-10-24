@@ -10,7 +10,7 @@ const Payments = () => {
   return (
     <section>
       <div className=" bg-[#FAFAFA] pb-12 lg:pb-32">
-        <div className=" text-4xl p-10 font-bold lg:text-center lg:border-b lg:w-4/5 lg:mx-auto lg:border-b-black lg:pt-20 lg:text-5xl lg:font-extrabold ">
+        <div className=" text-4xl p-10 font-bold lg:text-center lg:border-b lg:w-4/5 lg:mx-auto lg:border-b-black lg:pt-20 md:text-5xl lg:font-extrabold ">
           <p className=" lg:mb-4 text-[#210F60]">
             Upgrade your Business with Opay
           </p>
@@ -26,14 +26,14 @@ const Payments = () => {
               className=" object-cover"
             />
           </div>
-          <div className=" basis-1/2 lg:self-start px-10 lg:px-0">
-            <h3 className=" text-[#210F60] text-xl font-bold mb-3 lg:text-5xl lg:font-extrabold">
+          <div className=" basis-1/2 lg:self-start px-10  lg:px-0">
+            <h3 className=" text-[#210F60] text-xl font-bold mb-3 md:text-4xl lg:font-extrabold">
               POS Terminals
             </h3>
-            <p className=" font-bold mb-3 lg:text-xl">
+            <p className=" font-bold mb-3 md:text-xl">
               Get POS terminals that meet your specific needs
             </p>
-            <ul className=" list-disc marker:text-green-500 leading-10 lg:text-lg lg:leading-10">
+            <ul className=" list-disc marker:text-green-500 leading-10 md:text-lg md:leading-10">
               <li>Best network uptime & lowest charges</li>
               <li>No delay in recieving payments</li>
               <li>Automated dispute resolution</li>
@@ -55,13 +55,13 @@ const Payments = () => {
             />
           </div>
           <div className=" basis-1/2 lg:self-center px-10 lg:px-0">
-            <h3 className=" text-[#210F60] text-xl font-bold mb-3 lg:text-5xl lg:font-extrabold">
+            <h3 className=" text-[#210F60] text-xl font-bold mb-3 md:text-4xl lg:font-extrabold">
               Virtual Account
             </h3>
-            <p className=" font-bold mb-3 lg:text-xl">
+            <p className=" font-bold mb-3 md:text-xl">
               Receive transfers in a safer & faster way
             </p>
-            <ul className=" list-disc marker:text-green-500 leading-10 lg:text-lg lg:leading-10">
+            <ul className=" list-disc marker:text-green-500 leading-10 md:text-lg md:leading-10">
               <li>Receive funds safely with masked accounts</li>
               <li>Instant Voice notifications</li>
               <li>100% transaction success rate</li>
@@ -78,13 +78,13 @@ const Payments = () => {
             />
           </div>
           <div className=" basis-1/2 lg:self-center px-10 lg:px-0">
-            <h3 className=" text-[#210F60] text-xl font-bold mb-3 lg:text-5xl lg:font-extrabold">
+            <h3 className=" text-[#210F60] text-xl font-bold mb-3 md:text-4xl lg:font-extrabold">
               Opay Business App
             </h3>
-            <p className=" font-bold mb-3 lg:text-xl">
+            <p className=" font-bold mb-3 md:text-xl">
               Manage your business at your fingertips
             </p>
-            <ul className=" list-disc marker:text-green-500 leading-10 lg:text-lg lg:leading-10">
+            <ul className=" list-disc marker:text-green-500 leading-10 md:text-lg md:leading-10">
               <li>Collect payments via multiple channels</li>
               <li>Check transaction history & details in real-time</li>
               <li>Manage branches, employees & customers</li>
@@ -101,17 +101,17 @@ const Payments = () => {
         </div>
       </div>
       <div className=" my-10 lg:my-20">
-        <h2 className=" my-7 lg:my-20 capitalize text-center font-bold lg:font-extrabold text-2xl lg:text-5xl text-[#210F60]">
+        <h2 className=" my-7 lg:my-20 capitalize text-center font-bold lg:font-extrabold text-2xl md:text-4xl lg:text-5xl text-[#210F60]">
           online payments for everyone
         </h2>
         <div className="flex items-center gap-5 px-10 lg:px-24 overflow-x-scroll scrollbar-none ">
           <div className=" min-w-[270px]  lg:basis-1/2  bg-[url('https://opaybusiness.opayweb.com/static/png/1-946e5fb4.png')] lg:h-screen h-[55vh]  bg-center bg-cover">
             <div className="  h-full relative">
               <div className=" absolute bottom-10 text-white pl-5">
-                <p className=" font-bold text-xl lg:text-4xl lg:font-extrabold">
+                <p className=" font-bold text-xl lg:text-3xl lg:font-extrabold">
                   Full suite of
                 </p>
-                <p className=" font-bold text-xl mb-6 lg:mb-8  lg:text-4xl lg:font-extrabold">
+                <p className=" font-bold text-xl mb-6 lg:mb-8  lg:text-3xl lg:font-extrabold">
                   payment options
                 </p>
                 <p className=" lg:text-lg">
@@ -123,11 +123,11 @@ const Payments = () => {
           </div>
           <div className="min-w-[270px] lg:basis-1/2 bg-[url('https://opaybusiness.opayweb.com/static/png/2-d704ddc2.png')] lg:h-screen h-[55vh]   bg-center bg-cover">
             <div className=" h-full relative">
-              <div className=" absolute bottom-10 text-white pl-5">
-                <p className=" font-bold text-xl lg:text-4xl lg:font-extrabold">
+              <div className=" absolute bottom-16 text-white pl-5">
+                <p className=" font-bold text-xl lg:text-3xl lg:font-extrabold">
                   Fraud
                 </p>
-                <p className=" font-bold text-xl mb-6   lg:text-4xl lg:font-extrabold">
+                <p className=" font-bold text-xl mb-6 lg:text-3xl lg:font-extrabold">
                   detection
                 </p>
                 <p className=" lg:text-lg">
@@ -140,10 +140,10 @@ const Payments = () => {
           <div className="min-w-[270px]  lg:basis-1/2 bg-[url('https://opaybusiness.opayweb.com/static/png/3-e40fec62.png')] lg:h-screen h-[55vh] bg-center bg-cover">
             <div className="h-full relative">
               <div className=" absolute bottom-10 text-white pl-5">
-                <p className=" font-bold text-xl lg:text-4xl lg:font-extrabold">
+                <p className=" font-bold text-xl lg:text-3xl lg:font-extrabold">
                   24/7
                 </p>
-                <p className=" font-bold text-xl mb-3 lg:text-4xl lg:font-extrabold">
+                <p className=" font-bold text-xl mb-3 lg:text-3xl lg:font-extrabold">
                   Customer care
                 </p>
                 <p className=" lg:text-lg">
@@ -164,7 +164,7 @@ const Payments = () => {
         </h3>
       </div>
       <div className=" bg-[#FAFAFA] py-5 lg:py-20">
-        <div className=" p-4 text-center text-2xl font-medium lg:text-5xl lg:font-extrabold">
+        <div className=" p-4 text-center text-2xl font-medium md:text-3xl lg:text-5xl lg:font-extrabold">
           <h3 className=" lg:mb-4 text-[#210F60]">
             Get A{" "}
             <span className=" text-[#1DCF9F]">Professional Dashboard</span> with

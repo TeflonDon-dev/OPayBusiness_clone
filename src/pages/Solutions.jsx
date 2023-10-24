@@ -10,15 +10,15 @@ const Solutions = () => {
     <section className="pb-5 lg:pb-20">
       <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/banner-m-c1cd1ddb.png')] h-[43vh] bg-center bg-cover lg:h-[80vh] lg:pt-16">
         <div className=" p-8">
-          <p className=" text-3xl font-bold text-white leading-10 lg:text-center lg:text-5xl lg:font-extrabold lg:mb-3">
+          <p className=" text-3xl font-bold text-white leading-10 lg:text-center md:text-5xl lg:font-extrabold lg:mb-3">
             <span className=" text-[#1DCF9F] ">Innovative</span> Payment
             Solutions
           </p>
-          <p className=" text-3xl font-bold text-white leading-10 lg:text-center lg:text-5xl lg:font-extrabold">
+          <p className=" text-3xl font-bold text-white leading-10 lg:text-center md:text-5xl lg:font-extrabold">
             for Your Business
           </p>
           <hr className=" w-1/2 border-[#1DCF9F] my-5 lg:w-5/6 lg:mx-auto lg:mt-12 lg:mb-6" />
-          <p className=" text-white text-sm text-justify leading-6 lg:text-lg lg:text-center lg:w-5/6 lg:mx-auto">
+          <p className=" text-white text-sm text-justify leading-6 md:text-lg lg:text-center lg:w-5/6 lg:mx-auto">
             By understanding your business models and identifying pain points.
             OPay Business provides customized industrial solutions with
             ready-made products to help you outspace competitors.
@@ -26,10 +26,10 @@ const Solutions = () => {
         </div>
       </div>
       <div className=" grid grid-cols-2 lg:grid-cols-3 gap-2 -mt-12 items-center justify-center px-7 lg:px-24">
-        <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/1-a718bc58.png')] bg-cover bg-center h-24 lg:h-56"></div>
-        <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/2-23851d75.png')] bg-cover bg-center h-24 lg:h-56"></div>
-        <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/3-e1c24105.png')] bg-cover bg-center h-24 lg:h-56"></div>
-        <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/4-2a8dc70c.png')] bg-cover bg-center h-24 lg:h-56"></div>
+        <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/1-a718bc58.png')] bg-cover bg-center h-24 md:h-56"></div>
+        <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/2-23851d75.png')] bg-cover bg-center h-24 md:h-56"></div>
+        <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/3-e1c24105.png')] bg-cover bg-center h-24 md:h-56"></div>
+        <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/4-2a8dc70c.png')] bg-cover bg-center h-24 md:h-56"></div>
         <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/5-02306ae9.png')] hidden lg:inline-grid bg-cover bg-center h-24 lg:h-56"></div>
         <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/6-ca4fd523.png')] hidden lg:inline-grid bg-cover bg-center h-24 lg:h-56"></div>
       </div>
@@ -40,10 +40,10 @@ const Solutions = () => {
             alt=""
             className=" w-12 lg:w-16"
           />
-          <p className=" text-xl font-bold lg:text-2xl">
+          <p className=" text-xl font-bold md:text-2xl">
             Digitize value chains
           </p>
-          <p className=" text-[#575757] lg:text-xl">
+          <p className=" text-[#575757] md:text-xl">
             Get different payment collection tools and integration services to
             meet your specific business needs
           </p>
@@ -54,10 +54,10 @@ const Solutions = () => {
             alt=""
             className=" w-12 lg:w-16"
           />
-          <p className=" text-xl font-bold lg:text-2xl">
+          <p className=" text-xl font-bold md:text-2xl">
             Authomate payment collection processes
           </p>
-          <p className=" text-[#575757] lg:text-xl">
+          <p className=" text-[#575757] md:text-xl">
             Avoid man-made mistakes and enhance efficiency in collection,
             settlement & reconcilation.
           </p>
@@ -68,10 +68,10 @@ const Solutions = () => {
             alt=""
             className=" w-12 lg:w-16"
           />
-          <p className=" text-xl font-bold lg:text-2xl">
+          <p className=" text-xl font-bold md:text-2xl">
             Eliminate potential business risks
           </p>
-          <p className=" text-[#575757] lg:text-xl">
+          <p className=" text-[#575757] md:text-xl">
             Enhance the security of funds along your business operation journey.
           </p>
         </div>
@@ -81,10 +81,10 @@ const Solutions = () => {
             alt=""
             className=" w-12 lg:w-16"
           />
-          <p className=" text-xl font-bold lg:text-2xl">
+          <p className=" text-xl font-bold md:text-2xl">
             Expand sales channels
           </p>
-          <p className=" text-[#575757] lg:text-xl">
+          <p className=" text-[#575757] md:text-xl">
             Create your online website with ease and manage inventory, sales and
             customers anywhere you want.
           </p>
@@ -95,10 +95,10 @@ const Solutions = () => {
             alt=""
             className=" w-12 lg:w-16"
           />
-          <p className=" text-xl font-bold lg:text-2xl">
+          <p className=" text-xl font-bold md:text-2xl">
             Enhance customer loyalty and improve repeat purchase rate
           </p>
-          <p className=" text-[#575757] lg:text-xl">
+          <p className=" text-[#575757] md:text-xl">
             Provide expectional customer experiences with loyalty programs and
             reward systems.
           </p>
@@ -121,7 +121,7 @@ const Solutions = () => {
           Contact OPay
         </button>
       </div>
-      <p className=" text-center my-7 lg:mt-12 lg:mb-24 lg:text-xl text-[#575757]">
+      <p className=" text-center my-7 lg:mt-12 lg:mb-24 md:text-xl text-[#575757]">
         Get in touch with us to learn more
       </p>
     </section>

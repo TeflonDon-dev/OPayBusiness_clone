@@ -17,11 +17,11 @@ const Hero = () => {
           className=" object-cover lg:absolute lg:bottom-0 lg:right-0 lg:max-w-3xl"
         />
       </div>
-      <div className=" mx-6 lg:pl-20">
-        <h2 className="text-[#210F60] text-3xl font-bold lg:font-extrabold lg:text-6xl">
+      <div className=" mx-6 md:p-3 lg:pl-20">
+        <h2 className="text-[#210F60] text-3xl font-bold md:text-6xl lg:font-extrabold lg:text-5xl lg:tracking-wide">
           Reliable, Fast & Safe Payments
         </h2>
-        <p className="text-[#210f60] my-5 lg:my-8 text-lg lg:text-xl">
+        <p className="text-[#210f60] my-5 md:text-3xl  lg:my-8 text-lg lg:text-xl">
           Get omnichannel payment solutions to grow your business better!
         </p>
         <div className=" mb-5 text-[#575757] lg:hidden">
@@ -36,7 +36,7 @@ const Hero = () => {
         </div>
         <div>
           <button
-            className=" px-10 py-2 lg:px-12 lg:py-3 lg:font-extrabold lg:text-2xl lg:rounded-full rounded-3xl bg-[#1DCF9F] text-white text-lg font-bold"
+            className=" px-10 py-2 md:px-12 md:py-3 md:font-extrabold md:text-2xl md:rounded-full rounded-3xl bg-[#1DCF9F] text-white text-lg font-bold"
             onClick={() => dispatch(openModal())}
           >
             Contact Us

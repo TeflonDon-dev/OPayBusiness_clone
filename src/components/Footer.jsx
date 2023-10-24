@@ -34,7 +34,11 @@ const Footer = () => {
           }}
           to={"/"}
         >
-          <img src={OpayLogo} alt="OpayLogo" className=" lg:hidden w-40 " />
+          <img
+            src={OpayLogo}
+            alt="OpayLogo"
+            className=" lg:hidden w-40 md:w-60"
+          />
         </Link>
       </div>
       <div className="self-start">
@@ -79,21 +83,28 @@ const Footer = () => {
         <div className=" flex flex-col  lg:justify-between lg:items-center lg:flex-row gap-5 lg:gap-20">
           <div className=" flex flex-col  gap-2 border-b border-b-slate-100 lg:border-none pb-5 lg:p-0">
             <div className=" flex items-center gap-2">
-              <img src={location} alt="location" className=" w-4" />
-              <span className=" underline">Lagos</span>
+              <img
+                src={location}
+                alt="location"
+                className=" w-4 md:w-8 lg:w-4"
+              />
+              <span className=" underline md:text-2xl lg:text-xs">Lagos</span>
             </div>
-            <address className=" text-xs">
+            <address className=" text-xs md:text-lg md:my-2 lg:text-xs">
               Plot 9, Dr Nurudeen Olowopopo Avenue, Central Business District,
               Alausa 100212,
               <br /> Ikeja, Lagos, Nigeria
             </address>
-            <p className=" text-xs">
+            <p className=" text-xs md:text-lg lg:text-xs">
               Over 24 physical branches across the nation
             </p>
           </div>
           <div className=" flex flex-col gap-3">
-            <p className=" text-xs">Contact with us</p>
-            <p className=" text-xs"> info@opay-business.com</p>
+            <p className=" text-xs md:text-lg lg:text-xs">Contact with us</p>
+            <p className=" text-xs md:text-lg lg:text-xs">
+              {" "}
+              info@opay-business.com
+            </p>
             <div className=" flex items-center gap-4">
               <div className=" border rounded-full border-white p-[5px]">
                 <BsInstagram />

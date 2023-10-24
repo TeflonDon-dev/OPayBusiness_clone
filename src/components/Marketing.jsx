@@ -15,10 +15,10 @@ const Marketing = () => {
             className=" object-cover w-full"
           />
         </div>
-        <p className=" text-[#210F60] font-bold lg:font-extrabold text-xl pl-6 lg:pl-0 lg:text-3xl">
+        <p className=" text-[#210F60] font-bold md:font-extrabold text-xl pl-6 lg:pl-0 md:text-3xl">
           Omnichannel Payments
         </p>
-        <p className=" text-[#575757] text-sm pl-6 lg:pl-0 lg:text-lg">
+        <p className=" text-[#575757] text-sm pl-6 lg:pl-0 md:text-lg">
           Make payment collection, safer, easier and faster via multiple
           channels
         </p>
@@ -32,10 +32,10 @@ const Marketing = () => {
             className=" object-cover w-full"
           />
         </div>
-        <p className=" text-[#210F60] font-bold lg:font-extrabold text-xl pl-6 lg:text-3xl lg:pl-0">
+        <p className=" text-[#210F60] font-bold md:font-extrabold text-xl pl-6 md:text-3xl lg:pl-0">
           Industrial Payments Solutions
         </p>
-        <p className=" text-[#575757] text-sm pl-6 lg:pl-0 lg:text-lg">
+        <p className=" text-[#575757] text-sm pl-6 lg:pl-0 md:text-lg">
           Get a customized payment solution for your business
         </p>
       </div>
@@ -44,10 +44,10 @@ const Marketing = () => {
         <div>
           <img src={Banker} alt="Banker" className=" object-cover w-full" />
         </div>
-        <p className=" text-[#210F60] font-bold lg:font-extrabold  text-xl pl-6 lg:pl-0 lg:text-3xl">
+        <p className=" text-[#210F60] font-bold md:font-extrabold  text-xl pl-6 lg:pl-0 md:text-3xl">
           Banking & Bill Payments
         </p>
-        <p className=" text-[#575757] text-sm pl-6 lg:pl-0 lg:text-lg">
+        <p className=" text-[#575757] text-sm pl-6 lg:pl-0 md:text-lg">
           Enjoy financial inclusion and efficiency with the largest banking
           agent network
         </p>
@@ -61,10 +61,10 @@ const Marketing = () => {
             className=" object-cover w-full"
           />
         </div>
-        <p className=" text-[#210F60] font-bold lg:font-extrabold  text-xl pl-6 lg:text-3xl lg:pl-0">
+        <p className=" text-[#210F60] font-bold md:font-extrabold text-xl pl-6 md:text-3xl lg:pl-0">
           Online Sales & Marketing
         </p>
-        <p className=" text-[#575757] text-sm pl-6 lg:text-lg lg:pl-0">
+        <p className=" text-[#575757] text-sm pl-6 md:text-lg lg:pl-0">
           Expand your sales channels from offline to online
         </p>
       </div>

@@ -3,10 +3,10 @@ import React from "react";
 const Partners = () => {
   return (
     <section className="bg-[#F8F8FA] lg:bg-white p-6 mt-12 lg:mt-20">
-      <h2 className=" text-[#210F60] font-bold lg:font-extrabold text-xl text-center lg:text-6xl my-1 lg:my-4  ">
+      <h2 className=" text-[#210F60] font-bold lg:font-extrabold text-xl text-center md:text-4xl lg:text-6xl my-1 lg:my-4  ">
         Trusted by Over <span className=" text-[#1DCF9F]">1,000,000</span>
       </h2>
-      <h2 className=" text-[#210F60] font-bold lg:font-extrabold text-xl text-center lg:text-6xl">
+      <h2 className=" text-[#210F60] font-bold lg:font-extrabold md:text-4xl text-xl text-center lg:text-6xl">
         Bussinesses across Nigeria
       </h2>
       <div className=" grid grid-cols-3 lg:grid-cols-6 items-center justify-center space-y-8 mt-5">
