@@ -4,11 +4,35 @@ import opaySystem from "../assets/opaysystem.png";
 import phoneImg from "../assets/phone-img.png";
 import { openModal } from "../features/modalSlice";
 import { useDispatch } from "react-redux";
+import { motion } from "framer-motion";
 
+const posVariants = {
+  hidden: {
+    x: "100vw",
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { type: "spring", stiffness: 120 },
+  },
+};
+
+const virtualVariants = {
+  hidden: {
+    x: "-100vw",
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { type: "spring", stiffness: 120 },
+  },
+};
 const Payments = () => {
   const dispatch = useDispatch();
   return (
-    <section>
+    <section className=" overflow-hidden">
       <div className=" bg-[#FAFAFA] pb-12 lg:pb-32">
         <div className=" text-4xl p-10 font-bold lg:text-center lg:border-b lg:w-4/5 lg:mx-auto lg:border-b-black lg:pt-20 md:text-5xl lg:font-extrabold ">
           <p className=" lg:mb-4 text-[#210F60]">
@@ -19,13 +43,18 @@ const Payments = () => {
           </p>
         </div>
         <div className=" flex flex-col mt-5 lg:mt-32 lg:flex-row-reverse gap-10 justify-center items-center lg:w-4/5 lg:mx-auto">
-          <div className="  basis-1/2 overflow-hidden">
+          <motion.div
+            className="  basis-1/2 overflow-hidden"
+            variants={posVariants}
+            initial="hidden"
+            whileInView="visible"
+          >
             <img
               src="https://opaybusiness.opayweb.com/static/png/1-826a3d39.png"
               alt="pos-terminal"
               className=" object-cover"
             />
-          </div>
+          </motion.div>
           <div className=" basis-1/2 lg:self-start px-10  lg:px-0">
             <h3 className=" text-[#210F60] text-xl font-bold mb-3 md:text-4xl lg:font-extrabold">
               POS Terminals
@@ -47,13 +76,19 @@ const Payments = () => {
           </div>
         </div>
         <div className=" flex flex-col mt-5 lg:mt-20 lg:flex-row gap-10 justify-center items-center lg:w-4/5 lg:mx-auto lg:gap-24">
-          <div className="  basis-1/2 overflow-hidden">
+          <motion.div
+            className="  basis-1/2 overflow-hidden"
+            variants={virtualVariants}
+            initial="hidden"
+            animate="visible"
+            viewport={{ once: false }}
+          >
             <img
               src="https://opaybusiness.opayweb.com/static/png/2-ce895c70.png"
               alt="pos-terminal"
               className=" object-cover"
             />
-          </div>
+          </motion.div>
           <div className=" basis-1/2 lg:self-center px-10 lg:px-0">
             <h3 className=" text-[#210F60] text-xl font-bold mb-3 md:text-4xl lg:font-extrabold">
               Virtual Account

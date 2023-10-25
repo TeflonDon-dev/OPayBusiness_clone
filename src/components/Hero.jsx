@@ -4,20 +4,51 @@ import CBNlogo from "../assets/CBNLogo.png";
 import NDIClogo from "../assets/NDIClogo.png";
 import { openModal } from "../features/modalSlice";
 import { useDispatch } from "react-redux";
+import { motion } from "framer-motion";
+
+const buttonVariants = {
+  hover: {
+    scale: 1.1,
+    transition: { duration: 0.5, ease: "easeOut" },
+  },
+  tap: {
+    scale: 0.9,
+  },
+};
 
 const Hero = () => {
   const dispatch = useDispatch();
 
   return (
     <section className=" lg:bg-[#eff1ee] flex flex-col gap-5 lg:flex-row-reverse lg:gap-0 items-center lg:h-screen lg:items-center">
-      <div className="bg-[#E6F7EE] lg:bg-inherit lg:w-full lg:h-full lg:relative">
+      <motion.div
+        className="bg-[#E6F7EE] lg:bg-inherit lg:w-full lg:h-full lg:relative"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false }}
+        transition={{ duration: 1 }}
+        variants={{
+          visible: { opacity: 1, scale: 1 },
+          hidden: { opacity: 0, scale: 0.5 },
+        }}
+      >
         <img
           src={BannerImage}
           alt="Banner-Image"
           className=" object-cover lg:absolute lg:bottom-0 lg:right-0 lg:max-w-3xl"
         />
-      </div>
-      <div className=" mx-6 md:p-3 lg:pl-20">
+      </motion.div>
+      <motion.div
+        className=" mx-6 md:p-3 lg:pl-20"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false }}
+        transition={{ duration: 1.5, delay: 0.5 }}
+        variants={{
+          visible: { opacity: 1 },
+          hidden: { opacity: 0 },
+        }}
+      >
         <h2 className="text-[#210F60] text-3xl font-bold md:text-6xl lg:font-extrabold lg:text-5xl lg:tracking-wide">
           Reliable, Fast & Safe Payments
         </h2>
@@ -35,12 +66,15 @@ const Hero = () => {
           </p>
         </div>
         <div>
-          <button
+          <motion.button
             className=" px-10 py-2 md:px-12 md:py-3 md:font-extrabold md:text-2xl md:rounded-full rounded-3xl bg-[#1DCF9F] text-white text-lg font-bold"
             onClick={() => dispatch(openModal())}
+            variants={buttonVariants}
+            whileHover="hover"
+            whileTap="tap"
           >
             Contact Us
-          </button>
+          </motion.button>
         </div>
         <div className=" hidden lg:flex lg:items-center  lg:mt-20">
           <p className="flex items-center gap-1 font-bold">
@@ -51,7 +85,7 @@ const Hero = () => {
             Insured by <img src={NDIClogo} alt="NDIClogo" className="w-10" />
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -62,7 +62,7 @@ const Nav = () => {
           </Link>
         </div>
 
-        <div className="  text-3xl absolute right-8 top-5 cursor-pointer lg:hidden">
+        <div className="  text-3xl absolute right-4 top-4 cursor-pointer lg:hidden">
           <div onClick={() => setOpen(!open)}>
             {open ? (
               <AiOutlineClose className=" border-2 rounded-full border-black p-[2px]" />
@@ -75,7 +75,7 @@ const Nav = () => {
           onClick={() => setOpen(false)}
           className={` px-5 lg:flex transition-all ease-in duration-300 lg:items-center lg:pb-0 pb-12 lg:w-auto lg:pl-0 md:z-auto z-[-1] left-0 w-full  absolute lg:static ${
             open
-              ? "top-7 text-white opacity-100 bg-[#1DCF9F] h-[40vh]   flex flex-col justify-between  mt-10 items-start"
+              ? "top-5 text-white opacity-100 bg-[#1DCF9F] h-[40vh]   flex flex-col justify-between  mt-10 items-start"
               : " top-[-490px] opacity-0 "
           } md:opacity-100 `}
         >

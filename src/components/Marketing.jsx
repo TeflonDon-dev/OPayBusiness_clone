@@ -3,11 +3,21 @@ import omnicalPayment from "../assets/omnicalPayment.png";
 import industrialPayments from "../assets/industrialPayment.png";
 import Banker from "../assets/Banker.png";
 import onlineSales from "../assets/onlinesales.png";
-
+import { motion } from "framer-motion";
 const Marketing = () => {
   return (
     <section className="lg:w-5/6 w-full items-start justify-center gap-10 mt-16 lg:mt-32 lg:mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-y-16">
-      <div className=" flex flex-col gap-3 lg:gap-6">
+      <motion.div
+        className=" flex flex-col gap-3 lg:gap-6"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false }}
+        transition={{ duration: 1, delay: 0.5 }}
+        variants={{
+          visible: { opacity: 1 },
+          hidden: { opacity: 0 },
+        }}
+      >
         <div>
           <img
             src={omnicalPayment}
@@ -22,9 +32,19 @@ const Marketing = () => {
           Make payment collection, safer, easier and faster via multiple
           channels
         </p>
-      </div>
+      </motion.div>
 
-      <div className=" flex flex-col gap-3 lg:gap-6">
+      <motion.div
+        className=" flex flex-col gap-3 lg:gap-6"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false }}
+        transition={{ duration: 1, delay: 1 }}
+        variants={{
+          visible: { opacity: 1 },
+          hidden: { opacity: 0 },
+        }}
+      >
         <div>
           <img
             src={industrialPayments}
@@ -38,9 +58,19 @@ const Marketing = () => {
         <p className=" text-[#575757] text-sm pl-6 lg:pl-0 md:text-lg">
           Get a customized payment solution for your business
         </p>
-      </div>
+      </motion.div>
 
-      <div className=" flex flex-col gap-3 lg:gap-6">
+      <motion.div
+        className=" flex flex-col gap-3 lg:gap-6"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false }}
+        transition={{ duration: 1, delay: 1.5 }}
+        variants={{
+          visible: { opacity: 1 },
+          hidden: { opacity: 0 },
+        }}
+      >
         <div>
           <img src={Banker} alt="Banker" className=" object-cover w-full" />
         </div>
@@ -51,9 +81,19 @@ const Marketing = () => {
           Enjoy financial inclusion and efficiency with the largest banking
           agent network
         </p>
-      </div>
+      </motion.div>
 
-      <div className=" flex flex-col gap-3 lg:gap-6">
+      <motion.div
+        className=" flex flex-col gap-3 lg:gap-6"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false }}
+        transition={{ duration: 1, delay: 2 }}
+        variants={{
+          visible: { opacity: 1 },
+          hidden: { opacity: 0 },
+        }}
+      >
         <div>
           <img
             src={onlineSales}
@@ -67,7 +107,7 @@ const Marketing = () => {
         <p className=" text-[#575757] text-sm pl-6 md:text-lg lg:pl-0">
           Expand your sales channels from offline to online
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 };
