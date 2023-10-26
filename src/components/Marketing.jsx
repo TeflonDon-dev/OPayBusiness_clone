@@ -11,7 +11,7 @@ const Marketing = () => {
         className=" flex flex-col gap-3 lg:gap-6"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.5 }}
         variants={{
           visible: { opacity: 1 },
@@ -38,7 +38,7 @@ const Marketing = () => {
         className=" flex flex-col gap-3 lg:gap-6"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 1, delay: 1 }}
         variants={{
           visible: { opacity: 1 },
@@ -64,7 +64,7 @@ const Marketing = () => {
         className=" flex flex-col gap-3 lg:gap-6"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 1, delay: 1.5 }}
         variants={{
           visible: { opacity: 1 },
@@ -87,7 +87,7 @@ const Marketing = () => {
         className=" flex flex-col gap-3 lg:gap-6"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 1, delay: 2 }}
         variants={{
           visible: { opacity: 1 },

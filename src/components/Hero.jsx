@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 const buttonVariants = {
   hover: {
     scale: 1.1,
-    transition: { duration: 0.5, ease: "easeOut" },
   },
   tap: {
     scale: 0.9,
@@ -25,7 +24,7 @@ const Hero = () => {
         className="bg-[#E6F7EE] lg:bg-inherit lg:w-full lg:h-full lg:relative"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 1 }}
         variants={{
           visible: { opacity: 1, scale: 1 },
@@ -72,6 +71,7 @@ const Hero = () => {
             variants={buttonVariants}
             whileHover="hover"
             whileTap="tap"
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             Contact Us
           </motion.button>
