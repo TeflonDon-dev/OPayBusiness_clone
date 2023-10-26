@@ -8,7 +8,7 @@ const Testimonials = () => {
         className=" bg-[#F8F8FA] relative p-5"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 1 }}
         variants={{
           visible: { opacity: 1, scale: 1 },
@@ -30,7 +30,7 @@ const Testimonials = () => {
         className=" bg-[#F8F8FA] relative p-5 w-full lg:basis-1/2"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 1 }}
         variants={{
           visible: { opacity: 1, scale: 1 },
@@ -52,7 +52,7 @@ const Testimonials = () => {
         className=" bg-[#F8F8FA] relative p-5 "
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 1 }}
         variants={{
           visible: { opacity: 1, scale: 1 },

@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const posVariants = {
   hidden: {
-    x: "100vw",
+    x: "20vw",
     opacity: 0,
   },
   visible: {
@@ -20,7 +20,7 @@ const posVariants = {
 
 const virtualVariants = {
   hidden: {
-    x: "-100vw",
+    x: "-20vw",
     opacity: 0,
   },
   visible: {
@@ -32,7 +32,7 @@ const virtualVariants = {
 
 const opayVariants = {
   hidden: {
-    x: "100vw",
+    x: "20vw",
     opacity: 0,
   },
   visible: {
@@ -70,18 +70,39 @@ const Payments = () => {
     <section className=" overflow-hidden">
       <div className=" bg-[#FAFAFA] pb-12 lg:pb-32">
         <div className=" text-4xl p-10 font-bold lg:text-center lg:border-b lg:w-4/5 lg:mx-auto lg:border-b-black lg:pt-20 md:text-5xl lg:font-extrabold ">
-          <p className=" lg:mb-4 text-[#210F60]">
+          <motion.p
+            className=" lg:mb-4 text-[#210F60]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            variants={{
+              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: "5vh" },
+            }}
+          >
             Upgrade your Business with Opay
-          </p>
-          <p className=" text-[#210F60]">
+          </motion.p>
+          <motion.p
+            className=" text-[#210F60]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            variants={{
+              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: "5vh" },
+            }}
+          >
             <span className=" text-[#1DCF9F]">Omnichannel </span> Payments
-          </p>
+          </motion.p>
         </div>
         <div className=" flex flex-col mt-5 lg:mt-32 lg:flex-row-reverse gap-10 justify-center items-center lg:w-4/5 lg:mx-auto">
           <motion.div
             className="  basis-1/2 overflow-hidden"
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: true }}
             variants={posVariants}
           >
             <img
@@ -122,9 +143,19 @@ const Payments = () => {
                 Bill payments & more value-added services
               </motion.li>
             </motion.ul>
-            <button className=" bg-[#1DCF9F] px-6 py-3 rounded-full w-full lg:w-3/6   font-bold text-xl text-white my-5">
+            <motion.button
+              className=" bg-[#1DCF9F] px-6 py-3 rounded-full w-full lg:w-3/6   font-bold text-xl text-white my-5"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: "5vh" },
+              }}
+            >
               Apply for POS
-            </button>
+            </motion.button>
           </div>
         </div>
         <div className=" flex flex-col mt-5 lg:mt-20 lg:flex-row gap-10 justify-center items-center lg:w-4/5 lg:mx-auto lg:gap-24">
@@ -132,7 +163,8 @@ const Payments = () => {
             className="  basis-1/2 overflow-hidden"
             variants={virtualVariants}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: true }}
           >
             <img
               src="https://opaybusiness.opayweb.com/static/png/2-ce895c70.png"
@@ -171,7 +203,8 @@ const Payments = () => {
             className="  basis-1/2 overflow-hidden"
             variants={opayVariants}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: true }}
           >
             <img
               src="https://opaybusiness.opayweb.com/static/png/3-1582c16d.png"
@@ -206,101 +239,232 @@ const Payments = () => {
               </motion.li>
             </motion.ul>
             <div>
-              <img
+              <motion.img
                 src="https://opaybusiness.opayweb.com/static/png/gp-22ed0a4a.png"
                 alt=""
                 className=" w-32 mt-4"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+                variants={{
+                  visible: { opacity: 1, y: 0 },
+                  hidden: { opacity: 0, y: "5vh" },
+                }}
               />
             </div>
           </div>
         </div>
       </div>
       <div className=" my-10 lg:my-20">
-        <h2 className=" my-7 lg:my-20 capitalize text-center font-bold lg:font-extrabold text-2xl md:text-4xl lg:text-5xl text-[#210F60]">
+        <motion.h2
+          className=" my-7 lg:my-20 capitalize text-center font-bold lg:font-extrabold text-2xl md:text-4xl lg:text-5xl text-[#210F60]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: "5vh" },
+          }}
+        >
           online payments for everyone
-        </h2>
+        </motion.h2>
         <div className="flex items-center gap-5 px-10 lg:px-24 overflow-x-scroll scrollbar-none ">
           <div className=" min-w-[270px]  lg:basis-1/2  bg-[url('https://opaybusiness.opayweb.com/static/png/1-946e5fb4.png')] lg:h-screen h-[55vh]  bg-center bg-cover">
             <div className="  h-full relative">
               <div className=" absolute bottom-10 text-white pl-5">
-                <p className=" font-bold text-xl lg:text-3xl lg:font-extrabold">
-                  Full suite of
-                </p>
-                <p className=" font-bold text-xl mb-6 lg:mb-8  lg:text-3xl lg:font-extrabold">
-                  payment options
-                </p>
-                <p className=" lg:text-lg">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ duration: 1 }}
+                  variants={{
+                    visible: { opacity: 1, y: 0 },
+                    hidden: { opacity: 0, y: "5vh" },
+                  }}
+                >
+                  <p className=" font-bold text-xl lg:text-3xl lg:font-extrabold">
+                    Full suite of
+                  </p>
+                  <p className=" font-bold text-xl mb-6 lg:mb-8  lg:text-3xl lg:font-extrabold">
+                    payment options
+                  </p>
+                </motion.div>
+                <motion.p
+                  className=" lg:text-lg"
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                  variants={{
+                    visible: { opacity: 1, y: 0 },
+                    hidden: { opacity: 0, y: "5vh" },
+                  }}
+                >
                   Accept payments anytime and everywhere. Payments are made
                   easier with OPay.
-                </p>
+                </motion.p>
               </div>
             </div>
           </div>
           <div className="min-w-[270px] lg:basis-1/2 bg-[url('https://opaybusiness.opayweb.com/static/png/2-d704ddc2.png')] lg:h-screen h-[55vh]   bg-center bg-cover">
             <div className=" h-full relative">
               <div className=" absolute bottom-16 text-white pl-5">
-                <p className=" font-bold text-xl lg:text-3xl lg:font-extrabold">
-                  Fraud
-                </p>
-                <p className=" font-bold text-xl mb-6 lg:text-3xl lg:font-extrabold">
-                  detection
-                </p>
-                <p className=" lg:text-lg">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ duration: 1 }}
+                  variants={{
+                    visible: { opacity: 1, y: 0 },
+                    hidden: { opacity: 0, y: "5vh" },
+                  }}
+                >
+                  <p className=" font-bold text-xl lg:text-3xl lg:font-extrabold">
+                    Fraud
+                  </p>
+                  <p className=" font-bold text-xl mb-6 lg:text-3xl lg:font-extrabold">
+                    detection
+                  </p>
+                </motion.div>
+                <motion.p
+                  className=" lg:text-lg"
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                  variants={{
+                    visible: { opacity: 1, y: 0 },
+                    hidden: { opacity: 0, y: "5vh" },
+                  }}
+                >
                   We enable Level 1 PCI compliance and set custom fraud
                   protections.
-                </p>
+                </motion.p>
               </div>
             </div>
           </div>
           <div className="min-w-[270px]  lg:basis-1/2 bg-[url('https://opaybusiness.opayweb.com/static/png/3-e40fec62.png')] lg:h-screen h-[55vh] bg-center bg-cover">
             <div className="h-full relative">
               <div className=" absolute bottom-10 text-white pl-5">
-                <p className=" font-bold text-xl lg:text-3xl lg:font-extrabold">
-                  24/7
-                </p>
-                <p className=" font-bold text-xl mb-3 lg:text-3xl lg:font-extrabold">
-                  Customer care
-                </p>
-                <p className=" lg:text-lg">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ duration: 1 }}
+                  variants={{
+                    visible: { opacity: 1, y: 0 },
+                    hidden: { opacity: 0, y: "5vh" },
+                  }}
+                >
+                  <p className=" font-bold text-xl lg:text-3xl lg:font-extrabold">
+                    24/7
+                  </p>
+                  <p className=" font-bold text-xl mb-3 lg:text-3xl lg:font-extrabold">
+                    Customer care
+                  </p>
+                </motion.div>
+                <motion.p
+                  className=" lg:text-lg"
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                  variants={{
+                    visible: { opacity: 1, y: 0 },
+                    hidden: { opacity: 0, y: "5vh" },
+                  }}
+                >
                   Our team of experts are ready to handle your concerns
                   according to your business models all day long.
-                </p>
+                </motion.p>
               </div>
             </div>
           </div>
         </div>
-        <p className=" text-center my-4 lg:my-6 lg:text-xl text-lg p-3">
+        <motion.p
+          className=" text-center my-4 lg:my-6 lg:text-xl text-lg p-3"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: "5vh" },
+          }}
+        >
           Let your customers choose their preferred payment methods and accept
           payments anytime, everywhere.
-        </p>
-        <h3 className=" lg:text-3xl font-medium text-[#1DCF9F] text-center text-2xl flex items-center justify-center gap-2">
+        </motion.p>
+        <motion.h3
+          className=" lg:text-3xl font-medium text-[#1DCF9F] text-center text-2xl flex items-center justify-center gap-2"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.5 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: "5vh" },
+          }}
+        >
           Apply for OPay Online Gateway
           <LiaGreaterThanSolid className=" text-sm lg:text-lg" />
-        </h3>
+        </motion.h3>
       </div>
       <div className=" bg-[#FAFAFA] py-5 lg:py-20">
         <div className=" p-4 text-center text-2xl font-medium md:text-3xl lg:text-5xl lg:font-extrabold">
-          <h3 className=" lg:mb-4 text-[#210F60]">
+          <motion.h3
+            className=" lg:mb-4 text-[#210F60]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 1 }}
+            variants={{
+              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: "5vh" },
+            }}
+          >
             Get A{" "}
             <span className=" text-[#1DCF9F]">Professional Dashboard</span> with
-          </h3>
-          <h3 className=" text-[#210F60]">
+          </motion.h3>
+          <motion.h3
+            className=" text-[#210F60]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 1 }}
+            variants={{
+              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: "5vh" },
+            }}
+          >
             Visualization & Business Intelligence
-          </h3>
+          </motion.h3>
         </div>
 
         <div className=" mt-5 mb-10 lg:p-24">
           <img src={opaySystem} alt="" />
         </div>
-        <p className=" text-center p-5 text-xl font-bold lg:text-4xl lg:font-extrabold text-[#210F60] ">
+        <motion.p
+          className=" text-center p-5 text-xl font-bold lg:text-4xl lg:font-extrabold text-[#210F60] "
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: "5vh" },
+          }}
+        >
           Digitalize the way you handle your business operations
-        </p>
+        </motion.p>
         <div className=" grid grid-cols-2 lg:grid-cols-4 gap-5 p-5 lg:px-28 lg:py-14">
           <motion.div
             className=" bg-white flex flex-col gap-4 items-center justify-center px-2 py-6 rounded-lg"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ duration: 1 }}
             variants={{
               visible: { opacity: 1, scale: 1 },
@@ -320,7 +484,7 @@ const Payments = () => {
             className=" bg-white flex flex-col gap-4 items-center px-2 py-6 rounded-lg"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ duration: 1 }}
             variants={{
               visible: { opacity: 1, scale: 1 },
@@ -340,7 +504,7 @@ const Payments = () => {
             className=" bg-white flex flex-col gap-4 items-center px-2 py-6 rounded-lg"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ duration: 1 }}
             variants={{
               visible: { opacity: 1, scale: 1 },
@@ -360,7 +524,7 @@ const Payments = () => {
             className=" bg-white flex flex-col gap-4 items-center px-2 py-6 rounded-lg"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ duration: 1 }}
             variants={{
               visible: { opacity: 1, scale: 1 },

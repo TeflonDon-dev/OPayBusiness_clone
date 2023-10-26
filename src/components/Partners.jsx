@@ -18,7 +18,7 @@ const Partners = () => {
         variants={h2Variant}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 2, delay: 0.5 }}
       >
         Trusted by Over <span className=" text-[#1DCF9F]">1,000,000</span>
@@ -28,7 +28,7 @@ const Partners = () => {
         variants={h2Variant}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 2, delay: 1 }}
       >
         Bussinesses across Nigeria

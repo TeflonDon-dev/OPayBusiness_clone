@@ -43,7 +43,7 @@ const Nav = () => {
     <nav
       className={
         scroll
-          ? " z-50 w-full fixed bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10"
+          ? "  w-full fixed top-0 left-0  z-50 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10"
           : "w-full fixed top-0 left-0 z-50 bg-white"
       }
     >

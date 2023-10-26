@@ -25,7 +25,7 @@ const Contact = () => {
         transition={{ duration: 1 }}
         variants={{
           visible: { opacity: 1, y: 0 },
-          hidden: { opacity: 0, y: "10vh" },
+          hidden: { opacity: 0, y: "5vh" },
         }}
       >
         Join Us & Grow Your Business Faster
