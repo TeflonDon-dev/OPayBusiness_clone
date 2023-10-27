@@ -75,7 +75,7 @@ const Nav = () => {
           onClick={() => setOpen(false)}
           className={` px-5 lg:flex transition-all ease-in duration-300 lg:items-center lg:pb-0 pb-12 lg:w-auto lg:pl-0 md:z-auto z-[-1] left-0 w-full  absolute lg:static ${
             open
-              ? "top-5 text-white opacity-100 bg-[#1DCF9F] h-[40vh]   flex flex-col justify-between  mt-10 items-start"
+              ? "top-4 text-white opacity-100 bg-[#1DCF9F] h-[45vh] flex flex-col justify-between  mt-10 items-start"
               : " top-[-490px] opacity-0 "
           } md:opacity-100 `}
         >

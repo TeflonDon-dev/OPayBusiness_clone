@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <section className=" bg-[#F8F8F8]">
-      <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/banner-m-e38af5af.png')] bg-[#1DCF9F] bg-cover lg:bg-contain lg:bg-no-repeat bg-center h-[28vh] lg:h-screen">
+      <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/banner-m-e38af5af.png')] bg-[#1DCF9F] bg-cover lg:bg-contain lg:bg-no-repeat bg-center h-[32vh] lg:h-screen">
         <motion.h2
           className=" text-3xl font-bold text-center p-10 text-[#210F60] md:text-6xl lg:font-extrabold lg:pt-28"
           initial="hidden"
@@ -19,7 +19,7 @@ const About = () => {
           About Us
         </motion.h2>
       </div>
-      <div className=" flex items-center flex-col px-8 -mt-32 gap-10  lg:bg-white lg:flex-row-reverse lg:w-[90%] lg:rounded-lg lg:-mt-80 lg:mx-auto lg:h-screen lg:justify-between">
+      <div className=" flex items-center flex-col px-8 -mt-28 gap-10  lg:bg-white lg:flex-row-reverse lg:w-[90%] lg:rounded-lg lg:-mt-80 lg:mx-auto lg:h-screen lg:justify-between">
         <div className=" lg:hidden">
           <motion.img
             src="https://opaybusiness.opayweb.com/static/png/opay-m-82ba2d9b.png"

@@ -271,7 +271,7 @@ const Payments = () => {
           online payments for everyone
         </motion.h2>
         <div className="flex items-center gap-5 px-10 lg:px-24 overflow-x-scroll scrollbar-none ">
-          <div className=" min-w-[270px]  lg:basis-1/2  bg-[url('https://opaybusiness.opayweb.com/static/png/1-946e5fb4.png')] lg:h-screen h-[55vh]  bg-center bg-cover">
+          <div className=" min-w-[255px]  lg:basis-1/2  bg-[url('https://opaybusiness.opayweb.com/static/png/1-946e5fb4.png')] lg:h-screen h-[65vh]  bg-center bg-cover">
             <div className="  h-full relative">
               <div className=" absolute bottom-10 text-white pl-5">
                 <motion.div
@@ -292,7 +292,7 @@ const Payments = () => {
                   </p>
                 </motion.div>
                 <motion.p
-                  className=" lg:text-lg"
+                  className=" lg:text-lg px-1"
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
@@ -308,7 +308,7 @@ const Payments = () => {
               </div>
             </div>
           </div>
-          <div className="min-w-[270px] lg:basis-1/2 bg-[url('https://opaybusiness.opayweb.com/static/png/2-d704ddc2.png')] lg:h-screen h-[55vh]   bg-center bg-cover">
+          <div className="min-w-[255px] lg:basis-1/2 bg-[url('https://opaybusiness.opayweb.com/static/png/2-d704ddc2.png')] lg:h-screen h-[65vh]   bg-center bg-cover">
             <div className=" h-full relative">
               <div className=" absolute bottom-16 text-white pl-5">
                 <motion.div
@@ -329,7 +329,7 @@ const Payments = () => {
                   </p>
                 </motion.div>
                 <motion.p
-                  className=" lg:text-lg"
+                  className=" lg:text-lg px-1"
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
@@ -345,7 +345,7 @@ const Payments = () => {
               </div>
             </div>
           </div>
-          <div className="min-w-[270px]  lg:basis-1/2 bg-[url('https://opaybusiness.opayweb.com/static/png/3-e40fec62.png')] lg:h-screen h-[55vh] bg-center bg-cover">
+          <div className="min-w-[255px]  lg:basis-1/2 bg-[url('https://opaybusiness.opayweb.com/static/png/3-e40fec62.png')] lg:h-screen h-[65vh] bg-center bg-cover">
             <div className="h-full relative">
               <div className=" absolute bottom-10 text-white pl-5">
                 <motion.div
@@ -366,7 +366,7 @@ const Payments = () => {
                   </p>
                 </motion.div>
                 <motion.p
-                  className=" lg:text-lg"
+                  className=" lg:text-lg px-1"
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
@@ -398,7 +398,7 @@ const Payments = () => {
           payments anytime, everywhere.
         </motion.p>
         <motion.h3
-          className=" lg:text-3xl font-medium text-[#1DCF9F] text-center text-2xl flex items-center justify-center gap-2"
+          className=" lg:text-3xl font-medium text-[#1DCF9F] text-center text-xl px-2 flex items-center justify-center gap-2"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -413,7 +413,7 @@ const Payments = () => {
         </motion.h3>
       </div>
       <div className=" bg-[#FAFAFA] py-5 lg:py-20">
-        <div className=" p-4 text-center text-2xl font-medium md:text-3xl lg:text-5xl lg:font-extrabold">
+        <div className=" p-4 text-center text-xl font-bold md:text-3xl lg:text-5xl lg:font-extrabold">
           <motion.h3
             className=" lg:mb-4 text-[#210F60]"
             initial="hidden"
@@ -433,7 +433,7 @@ const Payments = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: 1 }}
+            transition={{ duration: 1, delay: 1.5 }}
             variants={{
               visible: { opacity: 1, y: 0 },
               hidden: { opacity: 0, y: "5vh" },
