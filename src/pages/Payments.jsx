@@ -122,7 +122,8 @@ const Payments = () => {
               className=" list-disc marker:text-green-500 leading-10 md:text-lg md:leading-10"
               variants={container}
               initial="hidden"
-              animate="show"
+              whileInView="show"
+              viewport={{ once: true }}
             >
               <motion.li variants={item}>
                 Best network uptime & lowest charges
@@ -183,7 +184,8 @@ const Payments = () => {
               className=" list-disc marker:text-green-500 leading-10 md:text-lg md:leading-10"
               variants={container}
               initial="hidden"
-              animate="show"
+              whileInView="show"
+              viewport={{ once: true }}
             >
               <motion.li variants={item}>
                 Receive funds safely with masked accounts
@@ -223,7 +225,8 @@ const Payments = () => {
               className=" list-disc marker:text-green-500 leading-10 md:text-lg md:leading-10"
               variants={container}
               initial="hidden"
-              animate="show"
+              whileInView="show"
+              viewport={{ once: true }}
             >
               <motion.li variants={item}>
                 Collect payments via multiple channels

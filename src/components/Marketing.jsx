@@ -12,7 +12,7 @@ const Marketing = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
         variants={{
           visible: { opacity: 1 },
           hidden: { opacity: 0 },
@@ -39,7 +39,7 @@ const Marketing = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 0.5, delay: 1 }}
         variants={{
           visible: { opacity: 1 },
           hidden: { opacity: 0 },
@@ -65,7 +65,7 @@ const Marketing = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 1.5 }}
+        transition={{ duration: 0.5, delay: 1.5 }}
         variants={{
           visible: { opacity: 1 },
           hidden: { opacity: 0 },
@@ -88,7 +88,7 @@ const Marketing = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 2 }}
+        transition={{ duration: 0.5, delay: 2 }}
         variants={{
           visible: { opacity: 1 },
           hidden: { opacity: 0 },

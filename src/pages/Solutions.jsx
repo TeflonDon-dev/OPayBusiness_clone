@@ -17,7 +17,7 @@ const Solutions = () => {
 
   return (
     <section className="pb-5 lg:pb-20">
-      <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/banner-m-c1cd1ddb.png')] h-[55vh] bg-center bg-cover lg:h-[80vh] lg:pt-16">
+      <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/banner-m-c1cd1ddb.png')] h-[50vh] bg-center bg-cover lg:h-[80vh] lg:pt-16">
         <div className=" p-8">
           <motion.p
             className=" text-3xl font-bold text-white leading-10 lg:text-center md:text-5xl lg:font-extrabold lg:mb-3"
@@ -79,7 +79,7 @@ const Solutions = () => {
           </motion.p>
         </div>
       </div>
-      <div className=" grid grid-cols-2 lg:grid-cols-3 gap-2 -mt-8 items-center justify-center px-7 lg:px-24">
+      <div className=" grid grid-cols-2 lg:grid-cols-3 gap-2 -mt-12 items-center justify-center px-7 lg:px-24">
         <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/1-a718bc58.png')] bg-cover bg-center h-24 md:h-56"></div>
         <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/2-23851d75.png')] bg-cover bg-center h-24 md:h-56"></div>
         <div className=" bg-[url('https://opaybusiness.opayweb.com/static/png/3-e1c24105.png')] bg-cover bg-center h-24 md:h-56"></div>
